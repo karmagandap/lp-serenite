@@ -1,0 +1,456 @@
+/* Variables */
+:root {
+  /* Typography */
+  --display-1: 120px;
+  --display-2: 72px;
+  --display-3: 48px;
+
+  --nav-link-1: 14px;
+  --nav-link-2: 12px;
+  --nav-link-3: 8px;
+
+  --nav-button: 18px;
+  --p-1: 24px;
+  --p-2: 20px;
+  --p-3: 16px;
+
+  --badge-1: 30px;
+  --badge-2: 24px;
+  --badge-3: 18px;
+
+  --title-1: 64px;
+  --title-2: 50px;
+  --title-3: 38px;
+
+  --menu: 36px;
+  --ingredient: 16;
+  --testi-title: 24px;
+  --testi-p: 14px;
+  --testi-name: 20px;
+  --testi-occupation: 14px;
+  --count: 80px;
+  --count-category: 24px;
+  --event-badge: 12px;
+  --event-category: 16px;
+  --event-p: 24px;
+  --label: 18px;
+
+  --button-padding-1: 24px 48px;
+  --button-padding-2: 20px 40px;
+  --button-padding-3: 12px 24px;
+
+  --button-1: 24px;
+  --button-2: 20px;
+  --button-3: 16px;
+
+  /* Font Style */
+  --forum: "Forum", cursive;
+  --ibm: "IBM Plex Serif", serif;
+  --source: "Source Sans 3", sans-serif;
+
+  /* Font Weight */
+  --bold: 700;
+  --semibold: 600;
+  --regular: 400;
+
+  /* Color Style */
+  --gold: #ecc892;
+  --black: #0e0e0e;
+  --white: #fff;
+}
+
+/* Utilities */
+/* ===== Body */
+body {
+  background-color: var(--black);
+}
+
+/* ===== Button */
+.btn {
+  border-radius: 0px;
+  border: 0px;
+  text-decoration: none;
+  font-family: var(--source);
+  font-weight: var(--semibold);
+}
+.btn-primary {
+  background-color: var(--gold);
+  color: var(--black);
+}
+.btn-primary:hover {
+  background-color: var(--gold);
+  color: var(--black);
+}
+.btn-secondary {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--gold);
+  border: 3px solid var(--gold);
+}
+.btn-secondary:hover {
+  background-color: var(--gold);
+  color: var(--black);
+  border: 3px solid var(--gold);
+}
+a.btn.btn-secondary {
+  font-family: var(--source);
+  font-weight: var(--semibold);
+  font-size: var(--button-3);
+  padding: var(--button-padding-3);
+}
+
+/* ===== Text */
+h3 {
+  font-size: var(--badge-3);
+  font-family: var(--source);
+  font-weight: var(--semibold);
+  color: var(--gold);
+}
+h1 {
+  font-size: var(--display-3);
+  font-family: var(--forum);
+  color: var(--white);
+}
+h2 {
+  font-size: var(--title-3);
+  font-family: var(--forum);
+  color: var(--white);
+}
+p {
+  font-size: var(--p-3);
+  font-family: var(--source);
+  color: var(--white);
+}
+
+/* Navbar Section */
+nav {
+  background-color: var(--black);
+}
+nav.navbar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+a.navbar-brand {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 20px;
+  color: var(--gold);
+}
+a.navbar-brand:hover {
+  color: var(--gold);
+}
+a.nav-link {
+  margin-right: 0;
+  margin-top: 24px;
+  font-weight: var(--semibold);
+  font-size: var(--nav-link-1);
+  color: var(--white);
+}
+a.nav-link:hover {
+  color: var(--gold);
+}
+a.nav-link:focus {
+  color: var(--gold);
+}
+#navbarNav a {
+  text-align: left;
+  font-size: var(--nav-button) !important;
+  width: 100%;
+  padding: var(--button-padding-3);
+  margin-top: 24px;
+}
+
+/* Hero Section */
+.my-hero {
+  background-image: url(../img/hero-img.png);
+  background-size: cover;
+  padding-top: 80px;
+}
+.my-hero-content {
+  padding: 130px 0;
+}
+.my-hero-display h3 {
+  margin-bottom: 64px;
+}
+.my-hero-display a {
+  margin-top: 64px;
+}
+.my-hero-features {
+  display: none;
+}
+.my-hero-social {
+  display: none;
+}
+.my-hero-social a {
+  text-decoration: none;
+  color: var(--gold);
+  margin-right: 32px;
+}
+.my-hero-social span {
+  background-color: var(--gold);
+  padding: auto 0;
+  width: 48px;
+  height: 2px;
+}
+.my-hero-social p {
+  color: var(--gold) !important;
+  font-weight: var(--semibold);
+  font-family: var(--source);
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-left: 32px;
+}
+.my-hero-badge p {
+  color: var(--gold) !important;
+  border: 2px solid var(--gold);
+  padding: 4px 16px;
+  font-weight: var(--semibold);
+  font-family: var(--source);
+  font-size: 18px !important;
+  margin-bottom: 0;
+}
+
+/* About Section */
+section.my-about.container {
+  margin: 212px auto;
+}
+.my-about-img {
+  display: flex;
+  margin-bottom: 32px;
+}
+.my-about-img .img-1 {
+  position: static;
+  width: 48%;
+}
+.my-about-img .img-2 {
+  position: static;
+  width: 48%;
+  margin-left: 4%;
+}
+.my-about-border {
+  width: 320px;
+  height: 600px;
+  border: 3px solid var(--gold);
+  margin-left: auto;
+  margin-right: auto;
+}
+.my-about-border {
+  display: none;
+}
+div.col-lg-6.my-about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.my-about-content h2 {
+  margin-top: 24px;
+}
+.my-about-content p {
+  margin-top: 32px;
+}
+.my-about-content a {
+  margin-top: 48px;
+  width: fit-content;
+}
+
+/* Special Section */
+div.row.my-special-1 {
+  flex-direction: column-reverse;
+}
+div.col-lg-6.my-special-img {
+  padding: 12;
+}
+.my-special-img {
+  margin: 48px 0;
+}
+.my-special-img .img-1 {
+  width: 100%;
+}
+.my-special-img .img-2 {
+  width: 100%;
+}
+.my-special-content {
+  padding: 12;
+}
+.my-special-content h3 {
+  margin-bottom: 24px;
+}
+.my-special-content h2 {
+  margin-bottom: 32px;
+}
+.my-special-content p {
+  margin-bottom: 48px;
+}
+
+.toc li {
+  display: flex;
+}
+
+.toc li .title {
+  order: 1;
+}
+
+.toc li .chapter {
+  order: 3;
+}
+
+.toc li::after {
+  background-image: radial-gradient(circle, currentcolor 1px, transparent 1.5px);
+  background-position: bottom;
+  background-size: 1ex 2.5px;
+  background-repeat: space no-repeat;
+  content: "";
+  flex-grow: 1;
+  height: 1em;
+  order: 2;
+}
+
+/* Responsive */
+/* Desktop */
+@media (min-width: 991px) {
+  a.btn.btn-secondary {
+    font-size: var(--button-1);
+    padding: var(--button-padding-1);
+  }
+
+  /* ===== Text */
+  h3 {
+    font-size: var(--badge-1) !important;
+  }
+  h1 {
+    font-size: var(--display-1) !important;
+  }
+  h2 {
+    font-size: var(--title-1) !important;
+  }
+  p {
+    font-size: var(--p-1) !important;
+  }
+
+  /* Navbar Section */
+  a.navbar-brand {
+    font-size: 32px;
+  }
+  nav {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  a.nav-link {
+    margin-right: 32px;
+    margin-top: 0;
+  }
+  #navbarNav a {
+    margin-top: 0;
+    text-align: center;
+    width: auto;
+  }
+
+  /* Hero Section */
+  .my-hero-display a {
+    font-size: var(--button-1) !important;
+    padding: var(--button-padding-1) !important;
+  }
+  .my-hero-features {
+    display: flex;
+    margin-top: 155px;
+    justify-content: space-between;
+    color: var(--gold);
+  }
+  .my-hero-social {
+    display: flex;
+    align-items: center;
+  }
+
+  /* About Section */
+  .my-about-img {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .my-about-img .img-1 {
+    position: absolute;
+    z-index: 2;
+    width: 312px;
+    height: 354px;
+    object-fit: cover;
+    margin-top: 11%;
+    margin-left: 4%;
+  }
+  .my-about-img .img-2 {
+    position: absolute;
+    z-index: 1;
+    width: 344px;
+    height: 489px;
+    object-fit: cover;
+    margin-top: 2%;
+    margin-left: 11%;
+  }
+  .my-about-border {
+    display: block;
+    width: 320px;
+    height: 600px;
+    border: 3px solid var(--gold);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Special Section */
+  div.row.my-special-1 {
+    flex-direction: row;
+  }
+  .my-special-img {
+    padding: 0;
+    margin: 0;
+  }
+  .my-special-img .img-1 {
+    height: 957px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .my-special-img .img-2 {
+    height: 718px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .my-special-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+  }
+  .my-special-content a {
+    width: fit-content;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  a.btn.btn-secondary {
+    font-size: var(--button-2);
+    padding: var(--button-padding-2);
+  }
+
+  /* ===== Text */
+  h3 {
+    font-size: var(--badge-2);
+  }
+  h1 {
+    font-size: var(--display-2);
+  }
+  h2 {
+    font-size: var(--title-2);
+  }
+  p {
+    font-size: var(--p-2);
+  }
+
+  /* Navbar Section */
+  a.navbar-brand {
+    font-size: 25px;
+  }
+
+  /* Hero Section */
+  .my-hero-display a {
+    margin-top: 64px;
+    font-size: var(--button-2);
+    padding: var(--button-padding-2);
+  }
+}
