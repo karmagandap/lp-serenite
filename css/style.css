@@ -22,7 +22,10 @@
   --title-2: 50px;
   --title-3: 38px;
 
-  --menu: 36px;
+  --menu-1: 32px;
+  --menu-2: 28px;
+  --menu-3: 20px;
+
   --ingredient: 16;
   --testi-title: 24px;
   --testi-p: 14px;
@@ -283,6 +286,42 @@ div.col-lg-6.my-special-img {
   margin-bottom: 48px;
 }
 
+/* Menu Section */
+section.my-menu.container {
+  margin-top: 240px;
+}
+.my-menu-header {
+  margin-bottom: 72px;
+}
+.my-menu-header h3 {
+  margin-bottom: 24px;
+}
+.my-menu-wrapper .sepparator {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(225, 225, 225, 0.24);
+}
+.my-menu-nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 32px 0;
+  padding: 0;
+}
+.my-menu-nav a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--forum);
+  font-size: var(--menu-3);
+}
+.my-menu-nav a:hover {
+  color: var(--gold);
+}
+.my-menu-nav a:focus {
+  color: var(--gold);
+}
+
 .toc li {
   display: flex;
 }
@@ -402,12 +441,12 @@ div.col-lg-6.my-special-img {
     margin: 0;
   }
   .my-special-img .img-1 {
-    height: 957px;
+    height: 100%;
     width: 100%;
     object-fit: cover;
   }
   .my-special-img .img-2 {
-    height: 718px;
+    height: 100%;
     width: 100%;
     object-fit: cover;
   }
@@ -420,9 +459,15 @@ div.col-lg-6.my-special-img {
   .my-special-content a {
     width: fit-content;
   }
+
+  /* Menu Section */
+  .my-menu-nav a {
+    font-size: var(--menu-1) !important;
+    margin: 0 55px !important;
+  }
 }
 /* Tablet */
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   a.btn.btn-secondary {
     font-size: var(--button-2);
     padding: var(--button-padding-2);
@@ -452,5 +497,11 @@ div.col-lg-6.my-special-img {
     margin-top: 64px;
     font-size: var(--button-2);
     padding: var(--button-padding-2);
+  }
+
+  /* Menu Section */
+  .my-menu-nav a {
+    font-size: var(--menu-2);
+    margin: 0 24px;
   }
 }
