@@ -432,6 +432,9 @@ h6.ingredients {
 }
 
 /* Gallery Section */
+.my-gallery {
+  margin-bottom: 240px;
+}
 .my-gallery-header {
   padding-top: 240px;
   padding-bottom: 72px;
@@ -458,6 +461,7 @@ h6.ingredients {
   background-size: cover;
   background-position: center;
   padding: 120px 0;
+  margin-bottom: 240px;
 }
 div.col-lg-5 {
   padding: 0;
