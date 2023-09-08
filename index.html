@@ -18,6 +18,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=IBM+Plex+Serif:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
 
     <!-- =================================== -->
+    <!-- AOS Style -->
+    <!-- =================================== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- =================================== -->
     <!-- Bootstrap CSS Style -->
     <!-- =================================== -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -65,9 +70,9 @@
     <section class="my-hero container-fluid">
       <div class="my-hero-content container">
         <div class="my-hero-display text-center">
-          <h3>AMAZING & DELICIOUS</h3>
-          <h1>Taste The Amazing Story In Every Flavor</h1>
-          <a class="btn btn-secondary" href="">View our menu</a>
+          <h3 data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease">AMAZING & DELICIOUS</h3>
+          <h1 data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease" data-aos-delay="300">Taste The Amazing Story In Every Flavor</h1>
+          <a class="btn btn-secondary" href="" data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease" data-aos-delay="600">View our menu</a>
         </div>
         <div class="my-hero-features">
           <div class="my-hero-social">
@@ -88,19 +93,19 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="my-about-img">
-            <img class="img-1" src="img/about-img-1.png" alt="" />
-            <img class="img-2" src="img/about-img-2.png" alt="" />
+            <img class="img-1" src="img/about-img-1.png" alt="" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease" data-aos-delay="200" />
+            <img class="img-2" src="img/about-img-2.png" alt="" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease" data-aos-delay="300" />
           </div>
           <div class="my-about-border"></div>
         </div>
         <div class="col-lg-6 my-about-content">
-          <h3>ABOUT US</h3>
-          <h2>A Family Story</h2>
-          <p>
+          <h3 data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease">ABOUT US</h3>
+          <h2 data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease" data-aos-delay="300">A Family Story</h2>
+          <p data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease" data-aos-delay="600">
             Our restaurant offers a diverse menu using as much local produce as possible with a zero-waste philosophy. We fuse the traditional and the modern in our cooking techniques to deliver a fun dining experience, set in the midst of
             Ubud’s lush countryside and our well maintained, integrated courtyard.
           </p>
-          <a href="" class="btn btn-secondary">Learn more</a>
+          <a href="" class="btn btn-secondary" data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease" data-aos-delay="700" data-aos-offset="200px">Learn more</a>
         </div>
       </div>
     </section>
@@ -109,7 +114,7 @@
     <!-- Special Section -->
     <section class="my-special container">
       <div class="row my-special-1">
-        <div class="col-lg-6 my-special-content">
+        <div class="col-lg-6 my-special-content" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease" data-aos-delay="200">
           <h3>SPECIAL DISH</h3>
           <h2>Braised Chicken all'Arrabbiata</h2>
           <p>
@@ -119,14 +124,14 @@
           <a href="" class="btn btn-secondary">Learn more</a>
         </div>
         <div class="col-lg-6 my-special-img">
-          <img src="img/special-dish-img.png" alt="" class="img-1" />
+          <img src="img/special-dish-img.png" alt="" class="img-1" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease" data-aos-delay="200" />
         </div>
       </div>
       <div class="row my-special-2">
         <div class="col-lg-6 my-special-img">
-          <img src="img/experience-img.png" alt="" class="img-2" />
+          <img src="img/experience-img.png" alt="" class="img-2" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease" data-aos-delay="200" />
         </div>
-        <div class="col-lg-6 my-special-content">
+        <div class="col-lg-6 my-special-content" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease" data-aos-delay="200">
           <h3>DELIGHTFUL EXPERIENCE</h3>
           <h2>Dinner, Event or Party?</h2>
           <p>Reserve your own dinner, event or party with a delightful experience in our restaurant!</p>
@@ -337,10 +342,74 @@
     </section>
     <!-- end Menu Section -->
 
+    <!-- Gallery Section -->
+    <section class="my-gallery container" style="margin-bottom: 120px">
+      <div class="my-gallery-header text-center">
+        <h3>GALLERY</h3>
+        <h2>
+          Look The Delicious <br />
+          Collection
+        </h2>
+      </div>
+      <div class="my-gallery-img">
+        <div class="row">
+          <div class="col-lg">
+            <div class="row">
+              <div class="col-lg"><img src="img/gallery-1.png" alt="" class="img-1" data-aos="flip-left" data-aos-easing="ease" data-aos-duration="1500" /></div>
+            </div>
+            <div class="row">
+              <div class="col-lg"><img src="img/gallery-2.png" alt="" class="img-2" data-aos="flip-left" data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="200" /></div>
+            </div>
+          </div>
+          <div class="col-lg"><img src="img/gallery-3.png" alt="" class="img-3" data-aos="flip-left" data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="400" /></div>
+          <div class="col-lg"><img src="img/gallery-4.png" alt="" class="img-4" data-aos="flip-left" data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="600" /></div>
+        </div>
+      </div>
+    </section>
+    <!-- end Gallery Section -->
+
+    <!-- Promo Section -->
+    <section class="my-promo container-fluid">
+      <div class="my-promo-wrapper container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="my-promo-content">
+              <h3>SPECIAL OFFERS</h3>
+              <h2>Taste Our Delicious Dish up to 35% OFF</h2>
+              <a href="" class="btn btn-secondary">Book now</a>
+              <a href="">Learn more</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <img src="img/promo.png" alt="" class="my-promo-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Promo Section -->
+
+    <!-- Mouse Style -->
+    <div class="inner-cursor"></div>
+    <div class="outer-cursor"></div>
+    <!-- end Mouse Style -->
+
     <!-- =================================== -->
     <!-- Menu Script -->
     <!-- =================================== -->
     <script src="js/my-menu.js"></script>
+
+    <!-- =================================== -->
+    <!-- Cursor Script -->
+    <!-- =================================== -->
+    <script src="js/my-cursor.js"></script>
+
+    <!-- =================================== -->
+    <!-- AOS Script -->
+    <!-- =================================== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true });
+    </script>
 
     <!-- =================================== -->
     <!-- Bootstrap Script -->
