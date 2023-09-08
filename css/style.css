@@ -73,6 +73,7 @@
 }
 
 .inner-cursor {
+  display: none;
   position: fixed;
   left: 10px;
   width: 10px;
@@ -85,12 +86,14 @@
   z-index: 99;
 }
 .inner-cursor.grow {
+  display: none;
   width: 25px;
   height: 25px;
   transition: width 0.5s, height 0.5s;
   mix-blend-mode: difference;
 }
 .outer-cursor {
+  display: none;
   position: fixed;
   left: 10px;
   width: 25px;
@@ -497,7 +500,16 @@ div.col-lg-5 {
 /* Responsive */
 /* Desktop */
 @media (min-width: 991px) {
-  /* Mouse Styl */
+  /* Mouse Style */
+  .inner-cursor {
+    display: block;
+  }
+  .inner-cursor.grow {
+    display: block;
+  }
+  .outer-cursor {
+    display: block;
+  }
 
   a.btn.btn-secondary {
     font-size: var(--button-1);
