@@ -140,15 +140,202 @@
       <div class="my-menu-wrapper">
         <div class="sepparator"></div>
         <ul class="my-menu-nav">
-          <li><a href="#">Drink</a></li>
-          <li><a href="#">Appetizer</a></li>
-          <li><a href="#">Main Course</a></li>
-          <li><a href="#">Dessert</a></li>
+          <li class="menu-list__item"><button id="menu-drink" class="is-active">Drink</button></li>
+          <li class="menu-list__item"><button id="menu-appetizer">Appetizer</button></li>
+          <li class="menu-list__item"><button id="menu-maincourse">Main Course</button></li>
+          <li class="menu-list__item"><button id="menu-dessert">Dessert</button></li>
         </ul>
         <div class="sepparator"></div>
       </div>
+      <div class="my-menu">
+        <!-- menu drink -->
+        <div class="row menu-detail__item is-active" data-id="menu-drink">
+          <div class="col-lg-4"><img src="img/menu-drink-img.png" alt="" class="menu-img" /></div>
+          <div class="col-lg-8">
+            <div class="my-menu-content">
+              <ul>
+                <li>
+                  <div class="menu-title">
+                    <h4 class="title">The God Father</h4>
+                    <h4 class="price">$24</h4>
+                  </div>
+                  <h6 class="ingredients">Whiskey, Ameretto</h6>
+                </li>
+                <li>
+                  <div class="menu-title">
+                    <h4 class="title">Old Fashioned</h4>
+                    <h4 class="price">$32</h4>
+                  </div>
+                  <h6 class="ingredients">Bourbon, Whiskey, Angostura bitter, Orange peel & Brown sugar</h6>
+                </li>
+                <li>
+                  <div class="menu-title">
+                    <h4 class="title">Dry Martini</h4>
+                    <h4 class="price">$19</h4>
+                  </div>
+                  <h6 class="ingredients">Gin or Vodka, Splash of dry vermouth, Green olive</h6>
+                </li>
+                <li>
+                  <div class="menu-title">
+                    <h4 class="title">Spicy Margaritas</h4>
+                    <h4 class="price">$20</h4>
+                  </div>
+                  <h6 class="ingredients">Tequila, Passion fruit, Arancello, Lime juice & Chilli oil</h6>
+                </li>
+                <li>
+                  <div class="menu-title">
+                    <h4 class="title">Americano</h4>
+                    <h4 class="price">$12</h4>
+                  </div>
+                  <h6 class="ingredients">Campari, Vermouth Rosso & Soda</h6>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- menu appetizer -->
+        <div class="row menu-detail__item" data-id="menu-appetizer">
+          <div class="col-lg-4"><img src="img/menu-appetizer-img.png" alt="" class="menu-img" /></div>
+          <div class="col-lg-8">
+            <div class="my-menu-content">
+              <ul>
+                <li>
+                  <div class="menu-title">
+                    <h4 class="title">Carbonara Arancini</h4>
+                    <h4 class="price">$32</h4>
+                  </div>
+                  <h6 class="ingredients">Creamy Pancetta, Parsley, & Pecorino</h6>
+                </li>
+                <li>
+                  <div class="menu-title">
+                    <h4 class="title">Italian Salad</h4>
+                    <h4 class="price">$39</h4>
+                  </div>
+                  <h6 class="ingredients">Sliced & Mixed Vegetables</h6>
+                </li>
+                <li>
+                  <div class="menu-title">
+                    <h4 class="title">Scamorza</h4>
+                    <h4 class="price">$24</h4>
+                  </div>
+                  <h6 class="ingredients">Plum tomatoes, Oregno, Sprigs, Arugula leaves, White & Red vinegar</h6>
+                </li>
+                <li>
+                  <div class="menu-title">
+                    <h4 class="title">Bruschetta</h4>
+                    <h4 class="price">$28</h4>
+                  </div>
+                  <h6 class="ingredients">Garlic, Onions, & Olive oil</h6>
+                </li>
+                <li>
+                  <div class="menu-title">
+                    <h4 class="title">Fritto Misto</h4>
+                    <h4 class="price">$27</h4>
+                  </div>
+                  <h6 class="ingredients">Mushrooms, Zucchini & Apples</h6>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- menu main course -->
+        <div class="row menu-detail__item" data-id="menu-maincourse">
+          <div class="col-lg-4"><img src="img/menu-maincourse-img.png" alt="" class="menu-img" /></div>
+          <div class="col-lg-8">
+            <div class="my-menu-content">
+              <ul>
+                <li>
+                  <div class="menu-title">
+                    <h4 class="title">Arugula Pizza</h4>
+                    <h4 class="price">$48</h4>
+                  </div>
+                  <h6 class="ingredients">Chopped garlic, Dried Tomato & extra-virgin olive oil</h6>
+                </li>
+                <li>
+                  <div class="menu-title">
+                    <h4 class="title">Lasagna Cheese & Sausage</h4>
+                    <h4 class="price">$29</h4>
+                  </div>
+                  <h6 class="ingredients">Lasagna noodles, Garlic cloves, Fresh mozzarella & Italian sausage</h6>
+                </li>
+                <li>
+                  <div class="menu-title">
+                    <h4 class="title">Grilled Fish with Artichoke Caponata</h4>
+                    <h4 class="price">$28</h4>
+                  </div>
+                  <h6 class="ingredients">Mahimahi fillets, Tomato sauce & Marinated artichoke hearts</h6>
+                </li>
+                <li>
+                  <div class="menu-title">
+                    <h4 class="title">Beef Brasato with Pappardelle and Mint</h4>
+                    <h4 class="price">$28</h4>
+                  </div>
+                  <h6 class="ingredients">Boneless beef, Fresh pappardelle, & Mint sprigs</h6>
+                </li>
+                <li>
+                  <div class="menu-title">
+                    <h4 class="title">Swordfish Sicilian-Style</h4>
+                    <h4 class="price">$27</h4>
+                  </div>
+                  <h6 class="ingredients">Swordfish Sicilian-Style</h6>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- menu dessert -->
+        <div class="row menu-detail__item" data-id="menu-dessert">
+          <div class="col-lg-4"><img src="img/menu-dessert-img.png" alt="" class="menu-img" /></div>
+          <div class="col-lg-8">
+            <div class="my-menu-content">
+              <ul>
+                <li>
+                  <div class="menu-title">
+                    <h4 class="title">Hazelnut Panna Cotta</h4>
+                    <h4 class="price">$22</h4>
+                  </div>
+                  <h6 class="ingredients">Hazelnut, Sweet chocolate ganache, & Crunchy</h6>
+                </li>
+                <li>
+                  <div class="menu-title">
+                    <h4 class="title">Roasted Almond</h4>
+                    <h4 class="price">$18</h4>
+                  </div>
+                  <h6 class="ingredients">Combination roasted almond & Cannoli recipe</h6>
+                </li>
+                <li>
+                  <div class="menu-title">
+                    <h4 class="title">Cannoli Crepes</h4>
+                    <h4 class="price">$28</h4>
+                  </div>
+                  <h6 class="ingredients">Ricotta & Candied citron, with pistachio sugar</h6>
+                </li>
+                <li>
+                  <div class="menu-title">
+                    <h4 class="title">Ricotta and Cinnamon Trifle</h4>
+                    <h4 class="price">$28</h4>
+                  </div>
+                  <h6 class="ingredients">Multi layer trifle</h6>
+                </li>
+                <li>
+                  <div class="menu-title">
+                    <h4 class="title">Bomboloni with Nutela and Hazelnut</h4>
+                    <h4 class="price">$27</h4>
+                  </div>
+                  <h6 class="ingredients">Nutella and doughnuts</h6>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- end Menu Section -->
+
+    <!-- =================================== -->
+    <!-- Menu Script -->
+    <!-- =================================== -->
+    <script src="js/my-menu.js"></script>
 
     <!-- =================================== -->
     <!-- Bootstrap Script -->

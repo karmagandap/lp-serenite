@@ -10,6 +10,7 @@
   --nav-link-3: 8px;
 
   --nav-button: 18px;
+
   --p-1: 24px;
   --p-2: 20px;
   --p-3: 16px;
@@ -24,9 +25,12 @@
 
   --menu-1: 32px;
   --menu-2: 28px;
-  --menu-3: 20px;
+  --menu-3: 18px;
 
-  --ingredient: 16;
+  --submenu-1: 16;
+  --submenu-2: 14;
+  --submenu-3: 10;
+
   --testi-title: 24px;
   --testi-p: 14px;
   --testi-name: 20px;
@@ -308,34 +312,57 @@ section.my-menu.container {
   margin: 32px 0;
   padding: 0;
 }
-.my-menu-nav a {
+.my-menu-nav button {
   margin: 0 8px;
   text-decoration: none;
   color: var(--white);
   font-family: var(--forum);
   font-size: var(--menu-3);
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 0;
 }
-.my-menu-nav a:hover {
+.my-menu-nav button:hover {
   color: var(--gold);
 }
-.my-menu-nav a:focus {
+.my-menu-nav button:focus {
   color: var(--gold);
 }
-
-.toc li {
+button.is-active {
+  color: var(--gold);
+}
+.my-menu .row {
+  padding-top: 120px;
+}
+.my-menu .menu-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-bottom: 56px;
+}
+.my-menu-content {
+  border: 3px solid var(--gold);
+  padding: 0px 28px 56px 28px;
+}
+ul {
+  padding: 0;
+}
+.my-menu-content li {
+  list-style: none;
+  padding-top: 56px;
+}
+.my-menu-content li .menu-title {
   display: flex;
 }
 
-.toc li .title {
+.my-menu-content li .title {
+  font-family: var(--forum);
+  font-size: var(--menu-3);
+  color: var(--white);
   order: 1;
 }
-
-.toc li .chapter {
-  order: 3;
-}
-
-.toc li::after {
-  background-image: radial-gradient(circle, currentcolor 1px, transparent 1.5px);
+.my-menu-content li .menu-title::after {
+  background-image: radial-gradient(circle, var(--white), transparent 1.5px);
   background-position: bottom;
   background-size: 1ex 2.5px;
   background-repeat: space no-repeat;
@@ -343,6 +370,24 @@ section.my-menu.container {
   flex-grow: 1;
   height: 1em;
   order: 2;
+}
+.my-menu-content li .price {
+  font-family: var(--forum);
+  font-size: var(--menu-3);
+  color: var(--gold);
+  order: 3;
+}
+h6.ingredients {
+  font-family: var(--source);
+  font-size: 10px;
+  color: var(--gold);
+}
+
+.menu-detail__item {
+  display: none;
+}
+.menu-detail__item.is-active {
+  display: flex;
 }
 
 /* Responsive */
@@ -461,9 +506,27 @@ section.my-menu.container {
   }
 
   /* Menu Section */
-  .my-menu-nav a {
+  .my-menu-nav button {
     font-size: var(--menu-1) !important;
     margin: 0 55px !important;
+  }
+  .my-menu .menu-img {
+    padding-bottom: 0;
+  }
+  .my-menu-content {
+    padding: 24px 56px 80px 56px;
+  }
+  .my-menu-content li .title {
+    font-size: var(--menu-1) !important;
+  }
+  .my-menu-content li .menu-title::after {
+    height: 1.8em;
+  }
+  .my-menu-content li .price {
+    font-size: var(--menu-1) !important;
+  }
+  h6.ingredients {
+    font-size: 16px !important;
   }
 }
 /* Tablet */
@@ -500,8 +563,20 @@ section.my-menu.container {
   }
 
   /* Menu Section */
-  .my-menu-nav a {
+  .my-menu-nav button {
     font-size: var(--menu-2);
     margin: 0 24px;
+  }
+  .my-menu-content li .title {
+    font-size: var(--menu-2);
+  }
+  .my-menu-content li .menu-title::after {
+    height: 1.8em;
+  }
+  .my-menu-content li .price {
+    font-size: var(--menu-2);
+  }
+  h6.ingredients {
+    font-size: 14px;
   }
 }
