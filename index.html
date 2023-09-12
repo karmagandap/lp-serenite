@@ -150,10 +150,26 @@
       <div class="my-menu-wrapper">
         <div class="sepparator"></div>
         <ul class="my-menu-nav">
-          <li class="menu-list__item"><button id="menu-drink" class="is-active">Drink</button></li>
-          <li class="menu-list__item"><button id="menu-appetizer">Appetizer</button></li>
-          <li class="menu-list__item"><button id="menu-maincourse">Main Course</button></li>
-          <li class="menu-list__item"><button id="menu-dessert">Dessert</button></li>
+          <li class="menu-list__item">
+            <a>
+              <button id="menu-drink" class="is-active">Drink</button>
+            </a>
+          </li>
+          <li class="menu-list__item">
+            <a>
+              <button id="menu-appetizer">Appetizer</button>
+            </a>
+          </li>
+          <li class="menu-list__item">
+            <a>
+              <button id="menu-maincourse">Main Course</button>
+            </a>
+          </li>
+          <li class="menu-list__item">
+            <a>
+              <button id="menu-dessert">Dessert</button>
+            </a>
+          </li>
         </ul>
         <div class="sepparator"></div>
       </div>
@@ -388,10 +404,388 @@
     </section>
     <!-- end Promo Section -->
 
+    <!-- Reservation Section -->
+    <section class="my-reservation container">
+      <div class="my-reservation-header text-center">
+        <h3>SPECIAL OFFERS</h3>
+        <h2>Online Reservation</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name" />
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Email" />
+            </div>
+            <div class="my-reservation-sub d-flex justify-content-between">
+              <div class="mb-3">
+                <input type="text" class="form-control" id="person" placeholder="1 Person" />
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="date" placeholder="dd/mm/yyyy" />
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="time" placeholder="08 : 00 AM" />
+              </div>
+            </div>
+            <a><button type="submit" class="btn btn-secondary">Submit</button></a>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe src="https://maps.google.com/maps?q=food&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Reservation Section -->
+
+    <!-- Testimonial Section -->
+    <section class="my-testi container-fluid">
+      <div class="my-testi-wrapper container">
+        <div class="my-testi-header text-center">
+          <h3>TESTIMONIALS</h3>
+          <h2>What People Are Saying</h2>
+        </div>
+      </div>
+      <div class="my-testi-content container">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="testi-content">
+                    <img src="img/icon-testi.svg" alt="" />
+                    <h5>Good Service!</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <div class="d-flex">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="d-flex">
+                      <img src="img/profile-1.png" alt="" class="profile" />
+                      <div class="testi-person">
+                        <h6>Rachell</h6>
+                        <p>Influencer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="testi-content">
+                    <img src="img/icon-testi.svg" alt="" />
+                    <h5>Good Service!</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <div class="d-flex">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="d-flex">
+                      <img src="img/profile-2.png" alt="" class="profile" />
+                      <div class="testi-person">
+                        <h6>Rachell</h6>
+                        <p>Influencer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="testi-content">
+                    <img src="img/icon-testi.svg" alt="" />
+                    <h5>Good Service!</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <div class="d-flex">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="d-flex">
+                      <img src="img/profile-3.png" alt="" class="profile" />
+                      <div class="testi-person">
+                        <h6>Rachell</h6>
+                        <p>Influencer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="testi-content">
+                    <img src="img/icon-testi.svg" alt="" />
+                    <h5>Good Service!</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <div class="d-flex">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="d-flex">
+                      <img src="img/profile-1.png" alt="" class="profile" />
+                      <div class="testi-person">
+                        <h6>Rachell</h6>
+                        <p>Influencer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="testi-content">
+                    <img src="img/icon-testi.svg" alt="" />
+                    <h5>Good Service!</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <div class="d-flex">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="d-flex">
+                      <img src="img/profile-2.png" alt="" class="profile" />
+                      <div class="testi-person">
+                        <h6>Rachell</h6>
+                        <p>Influencer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="testi-content">
+                    <img src="img/icon-testi.svg" alt="" />
+                    <h5>Good Service!</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <div class="d-flex">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="d-flex">
+                      <img src="img/profile-3.png" alt="" class="profile" />
+                      <div class="testi-person">
+                        <h6>Rachell</h6>
+                        <p>Influencer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="testi-content">
+                    <img src="img/icon-testi.svg" alt="" />
+                    <h5>Good Service!</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <div class="d-flex">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="d-flex">
+                      <img src="img/profile-1.png" alt="" class="profile" />
+                      <div class="testi-person">
+                        <h6>Rachell</h6>
+                        <p>Influencer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="testi-content">
+                    <img src="img/icon-testi.svg" alt="" />
+                    <h5>Good Service!</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <div class="d-flex">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="d-flex">
+                      <img src="img/profile-2.png" alt="" class="profile" />
+                      <div class="testi-person">
+                        <h6>Rachell</h6>
+                        <p>Influencer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="testi-content">
+                    <img src="img/icon-testi.svg" alt="" />
+                    <h5>Good Service!</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <div class="d-flex">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <div class="d-flex">
+                      <img src="img/profile-3.png" alt="" class="profile" />
+                      <div class="testi-person">
+                        <h6>Rachell</h6>
+                        <p>Influencer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Testimonial Section -->
+
+    <!-- Counter Section -->
+    <section class="my-counter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="counter text-center">
+              <div class="d-flex">
+                <h2 class="num ms-auto" data-val="945">000</h2>
+                <h2 class="me-auto">+</h2>
+              </div>
+              <h5>Happy People</h5>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="counter text-center">
+              <div class="d-flex">
+                <h2 class="num ms-auto" data-val="120">000</h2>
+                <h2 class="me-auto">+</h2>
+              </div>
+              <h5>Daily Order</h5>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="counter text-center">
+              <div class="d-flex">
+                <h2 class="num ms-auto" data-val="50">000</h2>
+                <h2 class="me-auto">+</h2>
+              </div>
+              <h5>Special Recipe</h5>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="counter text-center">
+              <div class="d-flex">
+                <h2 class="num ms-auto" data-val="20">000</h2>
+                <h2 class="me-auto">+</h2>
+              </div>
+              <h5>Tasty Drinks</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Counter Section -->
+
+    <!-- Event Section -->
+    <section class="my-event container">
+      <div class="my-event-header text-center">
+        <h3>UPCOMING EVENT</h3>
+        <h2>Recent Event Update</h2>
+      </div>
+      <div class="my-event-list">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="event-content-1">
+              <div class="date-label">14 AUGUST 2023</div>
+              <h5>GATHERING</h5>
+              <h4>Tells story in every flavor at upcoming gathering tonight!</h4>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="event-content-2">
+              <div class="date-label">06 SEPTEMBER 2023</div>
+              <h5>HEALTHY FOOD</h5>
+              <h4>Special event, we bring all of our healthy food for you guys!</h4>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="event-content-3">
+              <div class="date-label">29 DECEMBER 2023</div>
+              <h5>PARTY</h5>
+              <h4>Count down the new year party, celebrate upcoming 2024!</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Event Section -->
+
+    <!-- Footer Contact -->
+    <footer>
+      <div class="container">
+        <div class="contact-border">
+          <div class="contact-header text-center">
+            <h3>STAY UPDATED</h3>
+            <h2>Subscribe Us</h2>
+            <p>Subscribe to our Newsletter to get the first gift voucher by Serenite Restaurant up to 50% off!</p>
+          </div>
+          <form class="d-flex">
+            <input type="email" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter your email" />
+            <a><button type="submit" class="btn btn-primary">Subscribe</button></a>
+          </form>
+          <div class="socmed d-flex">
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-whatsapp"></i></a>
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-youtube"></i></a>
+          </div>
+          <p class="credits text-center">Copyright Serenite 2023 All Right Reserved | made with love by <a href="https://www.instagram.com/karmagandap">karmagandap</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- end Footer Contact -->
+
     <!-- Mouse Style -->
     <div class="inner-cursor"></div>
     <div class="outer-cursor"></div>
     <!-- end Mouse Style -->
+
+    <!-- =================================== -->
+    <!-- Counter Script -->
+    <!-- =================================== -->
+    <script src="js/my-counter.js"></script>
+
+    <!-- =================================== -->
+    <!-- jQuery Script -->
+    <!-- =================================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- =================================== -->
+    <!-- Bootstrap Script -->
+    <!-- =================================== -->
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- =================================== -->
     <!-- Menu Script -->
@@ -410,10 +804,5 @@
     <script>
       AOS.init({ once: true });
     </script>
-
-    <!-- =================================== -->
-    <!-- Bootstrap Script -->
-    <!-- =================================== -->
-    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
