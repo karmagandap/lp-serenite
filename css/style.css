@@ -516,13 +516,14 @@ div.col-lg-5 {
 }
 .my-reservation form input {
   background-color: rgba(0, 0, 0, 0);
+  color: white !important;
   padding: 20px 22px;
   margin-bottom: 25px;
   border-radius: 0;
 }
 .my-reservation form input:focus {
   background-color: rgba(0, 0, 0, 0);
-  color: white;
+  color: white !important;
   border: 1px solid #ecc892;
   box-shadow: none;
 }
